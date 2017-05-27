@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+</head>
+<body>
+<a href="/options/">Go Back!</a>
+<h1>Enter keywords - city and name for fuel stations</h1>
+<form action="/searchpage/" method="post" enctype="application/x-www-form-urlencoded">
+    {% if 'name' in temp.values %}
+        <input type="text" name="name" id="name">Name<br>
+    {% endif %}
+    {% if 'city' in temp.values %}
+        <input type="text" name="city" id="city">City<br>
+    {% endif %}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

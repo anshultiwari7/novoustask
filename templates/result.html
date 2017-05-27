@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<a href="/searchpage/">Go back!</a>
+<h1>This is your search result</h1>
+{% for data in tempobject %}
+     <li>
+         State : <a style="color: crimson">{{ data.State }}</a>
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City : <a style="color: crimson">{{ data.City }}</a>
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name : <a style="color: crimson">{{ data.Name }}</a>
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address : <a style="color: crimson">{{ data.Address }}</a>
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Name : <a style="color: crimson">{{ data.CompanyName }}</a>
+     </li>
+    <br>
+{% endfor %}
+</body>
+</html>
